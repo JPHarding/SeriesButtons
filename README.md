@@ -2,8 +2,6 @@
 
 A lightweight OpenMage (Magento 1) module that shows up to **3 rows of button selectors** on the product page, allowing customers to **navigate between products in the same "Series"**.
 
-- No radio buttons
-- No JS required
 - Buttons are simple hyperlinks (normal page loads)
 - Highlights the current product option automatically
 - Shows **unique values per row** (clean UI)
@@ -220,8 +218,6 @@ You can safely change:
 - border color
 - spacing
 - button size
-
-No JS required.
 
 ---
 
