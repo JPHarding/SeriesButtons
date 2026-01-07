@@ -1,0 +1,40 @@
+<?php
+
+/** @var JP_SeriesButtons_Block_Buttons $this */
+if (!$this->canShow()) {
+    return;
+}
+
+$products = $this->getSeriesProducts();
+if (!$products || count($products) < 2) {
+    return;
+}
+?>
+
+<div class="jp-seriesbuttons">
+    <?php for ($row = 1; $row <= 3; $row++): ?>
+        <?php
+        $values = $this->getUniqueValuesForRow($row, $products);
+        if (!$values || count($values) < 2) {
+            continue;
+        }
+        ?>
+
+        <div class="jp-seriesbuttons__row">
+            <div class="jp-seriesbuttons__buttons">
+                <?php foreach ($values as $label): ?>
+                    <?php
+                    $isActive = $this->isActiveValueForRow($row, $label);
+                    $url = $this->getBestMatchUrl($row, $label, $products);
+                    ?>
+                    <a
+                        class="jp-seriesbuttons__btn <?php echo $isActive ? 'is-active' : ''; ?>"
+                        href="<?php echo $this->escapeUrl($url); ?>">
+                        <?php echo $this->escapeHtml($label); ?>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+    <?php endfor; ?>
+</div>

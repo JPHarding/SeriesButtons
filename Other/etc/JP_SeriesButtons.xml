@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <JP_SeriesButtons>
+            <active>true</active>
+            <codePool>local</codePool>
+        </JP_SeriesButtons>
+    </modules>
+</config>

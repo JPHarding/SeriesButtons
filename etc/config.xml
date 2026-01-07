@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <JP_SeriesButtons>
+            <version>1.0.0</version>
+        </JP_SeriesButtons>
+    </modules>
+
+    <global>
+        <resources>
+            <jp_seriesbuttons_setup>
+                <setup>
+                    <module>JP_SeriesButtons</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </jp_seriesbuttons_setup>
+        </resources>
+
+        <blocks>
+            <jp_seriesbuttons>
+                <class>JP_SeriesButtons_Block</class>
+            </jp_seriesbuttons>
+        </blocks>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <jp_seriesbuttons>
+                    <file>jp_seriesbuttons.xml</file>
+                </jp_seriesbuttons>
+            </updates>
+        </layout>
+    </frontend>
+</config>
+
