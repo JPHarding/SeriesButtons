@@ -1,0 +1,53 @@
+.jp-seriesbuttons {
+  margin: 150px 0 0 0;
+  padding: 16px;
+}
+
+.jp-seriesbuttons__row {
+  margin-bottom: 12px;
+}
+
+.jp-seriesbuttons__row:last-child {
+  margin-bottom: 0;
+}
+
+.jp-seriesbuttons__buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.jp-seriesbuttons__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 160px;
+  min-height: 48px;
+
+  padding: 10px 14px;
+
+  border: 1px solid #444;
+  background: transparent;
+  color: black;
+
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.jp-seriesbuttons__btn:hover {
+  border-color: #d9a500;
+  color: #d9a500;
+}
+
+.jp-seriesbuttons__btn.is-active {
+  border-color: #d9a500;
+  color: #d9a500;
+  box-shadow: 0 0 0 1px rgba(246, 213, 0, 0.25) inset;
+}

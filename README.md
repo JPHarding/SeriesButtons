@@ -119,7 +119,18 @@ to:
 
 ---
 
-### 6) Flush cache and trigger setup script
+### 6) Add hook to `app/design/frontend/rwd/default/template/catalog/product/view.phtml`
+
+1. Find css class you want to add this after. in my case its `.extra-info` in `product/view.phtml`
+2. Add the following line after the `.extra-info` div.
+
+```php
+<?php echo $this->getChildHtml('jp_seriesbuttons'); ?>
+```
+
+---
+
+### 7) Flush cache and trigger setup script
 
 1. Go to Admin:
    `System - Cache Management`

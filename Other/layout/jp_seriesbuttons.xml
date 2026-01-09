@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
     <catalog_product_view>
-        <reference name="content">
-            <block type="jp_seriesbuttons/buttons" name="jp.seriesbuttons" template="jp/seriesbuttons/buttons.phtml"/>
+        <reference name="product.info">
+            <block type="jp_seriesbuttons/buttons" name="jp.seriesbuttons" template="jp/seriesbuttons/buttons.phtml" after="product.info.availability"/>
         </reference>
 
         <reference name="head">
